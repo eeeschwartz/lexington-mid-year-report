@@ -1,0 +1,18 @@
+<html>
+<head>
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="http://assets.annotateit.org/annotator/v1.2.7/annotator-full.min.js"></script>
+  <link rel="stylesheet" href="http://assets.annotateit.org/annotator/v1.2.7/annotator.min.css">
+  <script type="text/javascript">
+    $(function() {
+      $.get('http://www.corsproxy.com/lexingtonreport.webflow.com',
+        function(response) {
+          document.body.innerHTML = response;
+          new Annotator($('body'));
+        });
+    });
+  </script>
+</head>
+<body>
+</body>
+</html
